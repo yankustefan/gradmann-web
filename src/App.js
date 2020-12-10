@@ -1,38 +1,52 @@
 import React from 'react';
 import './App.css';
-import './App.css';
-import logo from "./assets/cover.png";
-import cover from "./assets/cover.png";
-import tileOne from "./assets/tile-1.svg";
+import logo from "./assets/logo.svg";
+import cover from "./assets/cover_1.jpg";
+import map from "./assets/map.gif";
+import imageBoat from "./assets/boat.jpg";
+
+import iconMenuOpen from "./assets/menu.svg";
+import iconMenuClose from "./assets/close.svg";
 
 import {Article} from "./components/Article";
 
 function App() {
   return (
     <React.Fragment>
-      <header className="app-header">
+      <header className="app-header glass">
+        <a id={'logo'} href={'/'}>
+          <img src={logo} height={240} width={36}/>
+        </a>
+        <input type="checkbox" id={'menu-check'} tabIndex={-1} style={{
+          position: 'absolute',
+          top: '-100px',
+          left: '-100px'
+        }}/>
         <nav>
-          <a className={'logo'}>
-            <img src={logo}/>
-          </a>
-          <a className={'menu'}>Dienstleistungen</a>
-          <a className={'menu'}>Philosphie</a>
-          <a className={'menu'}>Kontakt</a>
+          <a href={'#dienstleistungen'}>Dienstleistungen</a>
+          <a href={'#philosophie'}>Philosphie</a>
+          <a href={'#kontakt'}>Kontakt</a>
         </nav>
+        <label id={'menu'} htmlFor={'menu-check'}>
+          <img src={iconMenuOpen} className={'open'} height={36} width={36}/>
+          <img src={iconMenuClose} className={'close'} height={36} width={36}/>
+        </label>
       </header>
-      <div id={'home'} className={'cols'}>
-        <div className={'col slogan'}>
-          <h1>
-            Unternehmensberatung.
-            <span>Wendig, flexibel und agil.</span>
-          </h1>
+      <section id={'home'}>
+        <div className={'cols'}>
+          <div className={'col slogan'}>
+            <h1>
+              Unternehmensberatung.
+              <span>Wendig, flexibel und agil.</span>
+            </h1>
+          </div>
+          <div className={'col cover'}>
+            <figure>
+              <img className={'img'} src={cover}/>
+            </figure>
+          </div>
         </div>
-        <div className={'col cover'}>
-          <figure>
-            <img className={'img'} src={cover}/>
-          </figure>
-        </div>
-      </div>
+      </section>
       <section id={'dienstleistungen'}>
         <h1>Dienstleistungen</h1>
         <div className={'cols'}>
@@ -124,27 +138,44 @@ function App() {
         <div className={'cols'}>
           <Article title={''} order={1}>
             <p>
-              «High Performance for Amateurs» lautet das Motto der Quant 23-Bootsbauer. Und es sind denn Leistung auch bei sehr leichten Winden, Vielseitigkeit und Wandlungsfähigkeit, welche die Quant 23 Boote auszeichnen. Diese Attribute treffen auch auf die Unternehmensberatung Gradmann (UbG), eine Einzelfirma, geführt von Philipp Gradmann zu und haben den Inhaber bewogen, sich als passionierter Segler für eine Quant 23 zu entscheiden.
+              «High Performance for Amateurs» lautet das Motto der Quant 23-Bootsbauer. Und es sind denn Leistung auch
+              bei sehr leichten Winden, Vielseitigkeit und Wandlungsfähigkeit, welche die Quant 23 Boote auszeichnen.
+              Diese Attribute treffen auch auf die Unternehmensberatung Gradmann (UbG), eine Einzelfirma, geführt von
+              Philipp Gradmann zu und haben den Inhaber bewogen, sich als passionierter Segler für eine Quant 23 zu
+              entscheiden.
             </p>
             <p>
-              Wendig, flexibel und agil agiert auch die UbG, hinter der mit Philipp Gradmann ein leidenschaftlicher Treuhänder steht. Schon die kaufmännische Ausbildung hat er in einer Treuhandgesellschaft absolviert und auch die Jahre danach war er ausschliesslich treuhänderisch tätig. Dieser fundierte Erfahrungsschatz hat zu einer eigenen, kleinen Beratungsfirma geführt.
+              Wendig, flexibel und agil agiert auch die UbG, hinter der mit Philipp Gradmann ein leidenschaftlicher
+              Treuhänder steht. Schon die kaufmännische Ausbildung hat er in einer Treuhandgesellschaft absolviert und
+              auch die Jahre danach war er ausschliesslich treuhänderisch tätig. Dieser fundierte Erfahrungsschatz hat
+              zu einer eigenen, kleinen Beratungsfirma geführt.
             </p>
             <p>
-              UbG bietet qualitativ hochstehende Arbeit zu fairen Preisen an und berät vor allem juristische Personen, wobei auch natürliche Personen herzlich willkommen sind.
+              UbG bietet qualitativ hochstehende Arbeit zu fairen Preisen an und berät vor allem juristische Personen,
+              wobei auch natürliche Personen herzlich willkommen sind.
             </p>
             <p>
-              Ihren Seglern spendiert die Quant23 durch das «Foilen» lange genussvolle und gleichmässige Flüge über das Wasser. Bahnt sich dennoch einmal ein «Crash» an übernimmt der Scow-Bug mit spitzem Einlauf und viel Volumen. Nach einem meistens sanften «Touchdown» kommt der Bug gleich wieder hoch.
+              Ihren Seglern spendiert die Quant23 durch das «Foilen» lange genussvolle und gleichmässige Flüge über das
+              Wasser. Bahnt sich dennoch einmal ein «Crash» an übernimmt der Scow-Bug mit spitzem Einlauf und viel
+              Volumen. Nach einem meistens sanften «Touchdown» kommt der Bug gleich wieder hoch.
             </p>
             <p>
-              Auch diese Eigenschaft lässt sich auf die UbG übertragen. Wir betreuen Sie in «windstillen» Zeiten und beraten und unterstützen Sie, wenn es einmal «windiger» werden sollte.
+              Auch diese Eigenschaft lässt sich auf die UbG übertragen. Wir betreuen Sie in «windstillen» Zeiten und
+              beraten und unterstützen Sie, wenn es einmal «windiger» werden sollte.
             </p>
             <p>
-              Zögern Sie nicht uns zu kontaktieren, wir helfen Ihnen, den Bug wieder in die richtige Richtung zu bringen.
+              Zögern Sie nicht uns zu kontaktieren, wir helfen Ihnen, den Bug wieder in die richtige Richtung zu
+              bringen.
             </p>
             <p>
               UbG führt für Ihr Unternehmen die Buchhaltung nach Schweizer Standards.
             </p>
           </Article>
+          <div className={'col map'}>
+            <figure>
+              <img className={'img'} src={imageBoat} width={440}/>
+            </figure>
+          </div>
         </div>
       </section>
       <section id={'kontakt'}>
@@ -165,10 +196,14 @@ function App() {
               <span>Email: </span><a href={'mailto:info@gradmann.ch'}>info@gradmann.ch</a><br/>
             </p>
           </Article>
+          <div className={'col map'}>
+            <figure>
+              <img className={'img'} src={map} width={440}/>
+            </figure>
+          </div>
         </div>
       </section>
-      <footer>
-        Footer
+      <footer>&nbsp;
       </footer>
     </React.Fragment>
   );

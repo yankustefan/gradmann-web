@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 840">
+    <defs>
+        <pattern id="a" height="100%" width="100%" patternContentUnits="objectBoundingBox">
+            <image height="840"
+                   width="1200"
+                   preserveAspectRatio="none"
+                   xlink:href="https://i.stack.imgur.com/VRa2C.jpg"
+            />
+        </pattern>
+    </defs>
+<!--    <polygon fill="#00559d" clip-path="url(#a)" points="0 840 1200 628.48 1200 0 0 211.52 0 840"/>-->
+</svg>
