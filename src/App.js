@@ -23,9 +23,9 @@ function App() {
           left: '-100px'
         }}/>
         <nav>
-          <a href={'#dienstleistungen'}>Dienstleistungen</a>
-          <a href={'#philosophie'}>Philosphie</a>
-          <a href={'#kontakt'}>Kontakt</a>
+          <a id="m1" href={'#dienstleistungen'}>Dienstleistungen</a>
+          <a id="m2" href={'#philosophie'}>Philosphie</a>
+          <a id="m3" href={'#kontakt'}>Kontakt</a>
         </nav>
         <label id={'menu'} htmlFor={'menu-check'}>
           <img src={iconMenuOpen} className={'open'} height={36} width={36}/>

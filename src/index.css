@@ -17,8 +17,6 @@ body {
   background-repeat: no-repeat;
   background-size: 4800px 848px;
   background-position: center top;
-  /*background-attachment: fixed;*/
-
 }
 body * {
   box-sizing: border-box;
